@@ -28,4 +28,4 @@ extracted_results.json
 accuracy_report.json
 
 # 开发中间文档
-.planning
+planning/

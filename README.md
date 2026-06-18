@@ -7,7 +7,7 @@
 ```bash
 pip install -r requirements.txt              # 安装依赖
 cp .env.example .env                         # 编辑 .env 填入 API Key
-cd solution && python main.py -v             # LLM 模式运行
+cd solution && python main.py -v             # LLM 模式运行（-v 实时显示每条提取结果）
 cd solution && python main.py --mock -v      # Mock 模式运行（无需 API）
 ```
 
@@ -72,11 +72,6 @@ Python + OpenAI SDK + DeepSeek 模型（`deepseek-v4-flash`）。
 │   └── Agent工具使用.png          # Claude Code 辅助开发
 ├── 开发与结果截图说明/        ← 截图说明文档
 │   └── 说明文档.md
-├── planning/                  ← 设计文档
-│   ├── DESIGN.md                  # 方案设计（Schema / 边界 / 架构）
-│   ├── findings.md                # 数据分析记录
-│   ├── task_plan.md               # 任务计划
-│   └── progress.md                # 开发进度
 ├── solution/                  ← 核心代码
 │   ├── main.py                    # CLI 入口（加载→提取→增量写入）
 │   ├── config/
